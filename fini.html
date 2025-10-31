@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Gomoney</h1>
+    </header>
+    <main>
+        <div>
+         <div>
+            <h4>montant</h4>
+            <input type="number" id="montant" placeholder="ex : 40000">
+         </div>
+         <div>
+            <h4>la duree</h4>
+            <input type="number" id="duree" placeholder="ex 10 ans">
+         </div>
+         <div>
+            <h4>le salaire</h4>
+            <input type="number" id="salaire" placeholder="ex : 10000">
+         </div>
+         <button type="submit" onclick="ft_taux()">valider</button>
+        </div>
+        <script>
+  const params = new URLSearchParams(window.location.search);
+  const type = params.get("type");
+ function ft_taux ()
+{
+  let mont = Number(document.getElementById("montant").value) ;
+  let dure = Number(document.getElementById("duree").value) ;
+  let salary = Number(document.getElementById("salaire").value) ;
+
+  let d = dure*12 ;
+
+  let mosuel ;
+ 
+  if (type === "maison") {
+    let taux_ann=6 ;
+    let t=taux_ann/12/100 ;
+    mosuel = mont*(t*(1+t)**d)/((1+t)**d - 1) ;
+
+    if(mosuel > salary*0.4)
+  {
+    window.location.href = "rejected.html";
+  }
+  else
+  {
+    window.location.href="accepted.html?mosuel="+ mosuel ;
+  }
+
+} else if (type === "personnel") {
+     let taux_ann=7;
+    let t=taux_ann/12/100 ;
+    mosuel = mont*(t*(1+t)**d)/((1+t)**d - 1) ;
+    if(mosuel > salary*0.4)
+  {
+    window.location.href = "rejected.html";
+  }
+  else
+  {
+    window.location.href="accepted.html?mosuel="+ mosuel ;
+  }
+}
+
+ else if (type === "entreprise") {
+      let taux_ann=6.5 ;
+    let t=taux_ann/12/100 ;
+    mosuel = mont*(t*(1+t)**d)/((1+t)**d - 1) ;
+
+    if(mosuel > salary*0.4)
+  {
+    window.location.href = "rejected.html";
+  }
+  else
+  {
+    window.location.href="accepted.html?mosuel="+ mosuel ;
+  }
+
+
+}
+
+else if( type=="appartement"){
+      let taux_ann=5.5;
+    let t=taux_ann/12/100 ;
+    mosuel = mont*(t*(1+t)**d)/((1+t)**d - 1) ;
+
+    if(mosuel > salary*0.4)
+  {
+    window.location.href = "rejected.html";
+  }
+  else
+  {
+    window.location.href="accepted.html?mosuel="+ mosuel ;
+  }
+
+
+}
+
+else if (type=="terrain")
+{
+      let taux_ann=5;
+    let t=taux_ann/12/100 ;
+    mosuel = mont*(t*(1+t)**d)/((1+t)**d - 1) ;
+
+    if(mosuel > salary*0.4)
+  {
+    window.location.href = "rejected.html";
+  }
+  else
+  {
+    window.location.href="accepted.html?mosuel="+ mosuel ;
+  }
+
+
+}
+}
+</script>
+
+    </main>
+</body>
+</html>
