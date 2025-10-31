@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Votre prêt a été accepté </h2>
+  <p>Le montant mensuel de votre prêt est : <span id="resultat"></span> DH</p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const mosuel = params.get("mosuel");
+
+   
+    document.getElementById("resultat").textContent = Number(mosuel).toFixed(2);
+  </script>
+</body>
+</html>
