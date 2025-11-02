@@ -1,0 +1,319 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header a
+{
+    text-decoration: none;
+}
+header h1
+{
+    margin-top: 50px;
+ text-align: center;
+ color:#e3a634;
+ font: weight 600px;;
+ font-size: 40px;
+}
+.section  {
+    margin-top: 70PX;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    background-color: black;
+    
+}
+.pat
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first
+{
+    display: flex;
+    gap: 30px;
+}
+footer
+{
+    text-align: center;
+ color:#e3a634;
+ font: weight 40px;;
+ font-size: 23px;
+}
+.name
+{
+    color: white;
+}
+input[type="text"]
+{
+    padding: 10px;
+    border-radius: 25px;
+    margin-top:0;
+    border: none;
+    width: 190px;
+    height: 25px;
+}
+button[type="submit"]
+
+{
+    position: relative;
+    top: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #e3a634;
+    width: 100px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 750;
+}
+.first
+{
+    margin-top: 17px;
+}
+.em
+{
+    position: relative;
+    top: 10px;
+}
+input[type="email"]
+{
+    padding: 10px;
+    border-radius: 25px;
+    margin-top:0;
+    border: none;
+    width: 400px;
+    height: 25px;
+}
+footer
+{
+    margin-top: 130px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    color: white;
+    background-color: #e3a634;   
+    height: 90px;
+    margin-bottom: 0;
+}
+.foote{
+    color:  white;
+    font-size: 15px;
+}
+
+
+
+
+
+
+.fath
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+
+
+
+.grid1{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,280px);
+    gap: 60px;
+}
+.grid1 div{
+    display: flex;
+   flex-direction: column;
+   text-align: center;
+   border-radius: 25px;
+   height: 290px;
+   
+}
+.chi1
+{
+    background-color: #3D5A80;
+}
+
+.chi2
+{
+    background-color: #FFD166;
+}
+
+.chi3
+{
+    background-color: #06D6A0;
+}
+
+.chi4
+{
+    background-color: #118AB2;
+}
+
+.chi5
+{
+    background-color: #073B4C;
+}
+
+
+.chi2 img
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 35px;
+    right: 30px;
+}
+.chi3 img{
+    position: relative;
+    top: 30px;
+}
+.chi1 h3{
+    position: relative;
+    bottom: 35px;
+}
+.chi2 h3{
+    position: relative;
+    bottom:35px;
+}
+.chi3 h3{
+    position: relative;
+    bottom: 5px;
+}
+
+
+
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3,290px);
+    gap: 60px;
+}
+.grid2 div{
+    display: flex;
+   flex-direction: column;
+   text-align: center;
+   border-radius: 25px;
+   height: 290px;
+   position: relative;
+   left: 180px;
+}
+.chi4 img
+{
+position: relative;
+bottom: 50px;
+}
+
+.chi4 h3
+{
+    position: relative;
+    bottom: 110px;
+}
+.chi5 h3
+{
+position: relative;
+bottom: 20px;
+}
+.chi5 img
+{
+position: relative;
+top: 20px;
+}
+.fatal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.all
+{
+ margin-top: 70PX;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    background-color: black;   
+}
+.all h4
+{
+    color: white;
+}
+
+input[type="number"]
+{
+   padding: 10px;
+    border-radius: 25px;
+    margin-top:0;
+    border: none;
+    width: 350px;
+    height: 25px;
+}
+.jfk
+{
+    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.sd{
+    width: 500px;
+    height: 200px;
+    background-color: #06D6A0;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sd h2
+{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+}
+.sd p
+{
+color: black;
+font-size: 20px;
+font-weight: bold;
+position: relative;
+bottom: 10px;
+}
+.sd span
+{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.jd{
+    background-color: #C6131B;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    line-height: 30px;
+
+}
+.fd
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 170px;
+    margin-bottom: 200px;
+    align-items: center;
+}
