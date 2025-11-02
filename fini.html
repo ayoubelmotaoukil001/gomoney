@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -10,21 +11,27 @@
         <h1>Gomoney</h1>
     </header>
     <main>
-        <div>
-         <div>
-            <h4>montant</h4>
-            <input type="number" id="montant" placeholder="ex : 40000">
-         </div>
-         <div>
-            <h4>la duree</h4>
-            <input type="number" id="duree" placeholder="ex 10 ans">
-         </div>
-         <div>
-            <h4>le salaire</h4>
-            <input type="number" id="salaire" placeholder="ex : 10000">
-         </div>
-         <button type="submit" onclick="ft_taux()">valider</button>
+      <div class="fatal">
+        <div class="all">
+              <div>
+                  <h4>montant</h4>
+                  <input type="number" id="montant" placeholder="ex : 40000">
+              </div>
+              <div>
+                  <h4>la duree</h4>
+                  <input type="number" id="duree" placeholder="ex 10 ans">
+              </div>
+              <div>
+                  <h4>le salaire</h4>
+                  <input type="number" id="salaire" placeholder="ex : 10000">
+              </div>
+              <button type="submit" onclick="ft_taux()">valider</button>
         </div>
+      </div>
+
+
+
+
         <script>
   const params = new URLSearchParams(window.location.search);
   const type = params.get("type");
@@ -121,5 +128,10 @@ else if (type=="terrain")
 </script>
 
     </main>
+     <footer> 
+        <div class="foote">
+        <h1>Gomoney</h1>
+        </div>
+    </footer>
 </body>
 </html>
