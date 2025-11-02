@@ -4,17 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Votre prêt a été accepté </h2>
-  <p>Le montant mensuel de votre prêt est : <span id="resultat"></span> DH</p>
 
+    <header> 
+        <a href="index.html">
+            <h1> Gomoney</h1>
+        </a>
+    </header>
+  <div class="jfk">
+        <div class="sd">
+            <h2>felicitation votre demande a ete aceepte </h2>
+            <p>Le montant mensuel est :</p> <span id="resultat" ></span> </p>
+      </div>
+ </div>
   <script>
     const params = new URLSearchParams(window.location.search);
     const mosuel = params.get("mosuel");
 
    
-    document.getElementById("resultat").textContent = Number(mosuel).toFixed(2);
+    document.getElementById("resultat").textContent = Number(mosuel).toFixed(2) +" "+"DH/mois";
   </script>
+   <footer> 
+        <div class="foote">
+        <h1>Gomoney</h1>
+        </div>
+    </footer>
 </body>
 </html>
